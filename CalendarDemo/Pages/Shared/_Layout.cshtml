@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CalendarDemo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    @*<link rel="stylesheet" href="~/css/compatibility/bootstrap5.css" />*@
+    @*<link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/compatibility/fluent.css" />*@
+    <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/lib/ej2/material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/buttons_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/calendar_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/dd_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/i_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/n_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/p_material.css" />
+    <link rel="stylesheet" href="~/lib/ej2/c_material.css" />
+</head>
+<body>
+    <header>
+      
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/ej2/ej2.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
